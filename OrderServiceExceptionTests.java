@@ -3,6 +3,7 @@ package com.example.demo;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,7 +18,7 @@ public class OrderServiceExceptionTests {
     @Mock
     OrderRepository repo;
 
-    // モック化したRepositoryをServiceに注入する
+    // モック化したRepositoryをServiceに注入する。
     @InjectMocks
     OrderService service;
 
